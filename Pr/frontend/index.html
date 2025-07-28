@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Maintenance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js core library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Required dependencies for time axis -->
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Machine Maintenance Dashboard</h1>
+  </header>
+
+  <!-- Grid Container for Machine Cards -->
+  <main class="card-container" id="machine-container">
+    <!-- Cards will be injected by JavaScript -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+
+      <h2 id="modalTitle"></h2>
+      <p id="modalDetails"></p>
+
+      <p>
+        <strong>Last Maintenance:</strong>
+        <span id="modalLastMaintenance"></span>
+      </p>
+      <p>
+        <strong>Next Due:</strong>
+        <span id="modalNextDue"></span>
+      </p>
+
+      <!-- Dynamic Graph Image -->
+      <div class="graph-section">
+        <img id="modalGraph" src="" alt="Graph" loading="lazy" />
+      </div>
+
+      <!-- Time-Series Chart Section -->
+      <div class="chart-section">
+        <h3>
+          Live Sensor Metrics (Last 24h)
+          <span class="accuracy-badge">Accuracy: 93%</span>
+        </h3>
+
+        <!-- Chart 1: Temperature, Vibration, Pressure -->
+        <div>
+          <canvas id="metricChart" width="600" height="300"></canvas>
+        </div>
+
+        <!-- Chart 2: Humidity & Sound Level -->
+        <h4>Humidity & Sound Level</h4>
+        <div>
+          <canvas id="metricChart2" width="600" height="300"></canvas>
+        </div>
+      </div>
+
+      <!-- Hazard Section -->
+      <div class="hazard-section">
+        <img src="assets/hazard-icon.png" alt="Hazard Icon" loading="lazy" />
+        <div class="hazard-info">
+          <div class="hazard-bar-container">
+            <div id="modalHazardBar" class="hazard-bar"></div>
+          </div>
+          <p>
+            <strong>Hazard Level:</strong>
+            <span id="modalHazardPercent"></span>%
+          </p>
+          <ul id="hazardList"></ul>
+        </div>
+      </div>
+
+      <!-- Checklist Section -->
+      <div class="checklist-section">
+        <h3>Checklist</h3>
+        <ul id="modalChecklist"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>

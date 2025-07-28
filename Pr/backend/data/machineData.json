@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Atmospheric Distillation Column",
+    "image": "Atmospheric Distillation Column.jpg",
+    "lastMaintained": "2025-06-01",
+    "nextDue": "2025-08-01",
+    "status": "Healthy",
+    "hazard": 10,
+    "hazardList": ["Minor Leak", "Routine Valve Check Needed"],
+    "graph": "graph_1.png",
+    "checklist": [
+      { "task": "Check reflux ratio", "done": false },
+      { "task": "Inspect trays", "done": true }
+    ],
+    "details": "Main distillation unit, essential for crude oil separation."
+  },
+  {
+    "name": "Centrifugal Compressor",
+    "image": "Centrifugal Compressor.jpg",
+    "lastMaintained": "2025-05-20",
+    "nextDue": "2025-07-20",
+    "status": "Needs Check",
+    "hazard": 45,
+    "hazardList": ["High vibration detected", "Lubrication check required"],
+    "graph": "graph_2.png",
+    "checklist": [
+      { "task": "Check bearing temperature", "done": true },
+      { "task": "Replace filters", "done": false }
+    ],
+    "details": "Compresses gas using high-speed rotating impellers."
+  },
+  {
+    "name": "Centrifugal Pump",
+    "image": "Centrifugal Pump.jpg",
+    "lastMaintained": "2025-06-15",
+    "nextDue": "2025-08-15",
+    "status": "Healthy",
+    "hazard": 5,
+    "hazardList": ["Seal check recommended"],
+    "graph": "graph_3.png",
+    "checklist": [
+      { "task": "Check suction pressure", "done": false },
+      { "task": "Inspect impeller", "done": true }
+    ],
+    "details": "Used to transport fluids by converting rotational energy."
+  },
+  {
+    "name": "Crude Oil Preheater Furnace",
+    "image": "Crude Oil Preheater Furnace.jpg",
+    "lastMaintained": "2025-04-10",
+    "nextDue": "2025-07-25",
+    "status": "Monitor Closely",
+    "hazard": 70,
+    "hazardList": ["Temperature fluctuation", "Soot accumulation"],
+    "graph": "graph_4.png",
+    "checklist": [
+      { "task": "Calibrate temperature sensor", "done": false },
+      { "task": "Clean burner", "done": false }
+    ],
+    "details": "Preheats crude oil before entering the distillation column."
+  },
+  {
+    "name": "Fixed Bed Catalytic Reactor",
+    "image": "Fixed Bed Catalytic Reactor.jpg",
+    "lastMaintained": "2025-06-05",
+    "nextDue": "2025-08-05",
+    "status": "Healthy",
+    "hazard": 15,
+    "hazardList": ["Slight catalyst pressure drop"],
+    "graph": "graph_5.png",
+    "checklist": [
+      { "task": "Check catalyst bed height", "done": false },
+      { "task": "Monitor conversion rate", "done": true }
+    ],
+    "details": "Performs catalytic cracking in a fixed bed configuration."
+  },
+  {
+    "name": "Forced Draft Fan",
+    "image": "Forced Draft Fan.jpg",
+    "lastMaintained": "2025-05-10",
+    "nextDue": "2025-07-30",
+    "status": "Needs Check",
+    "hazard": 50,
+    "hazardList": ["Bearing noise", "Overcurrent event logged"],
+    "graph": "graph_6.png",
+    "checklist": [
+      { "task": "Lubricate motor", "done": false },
+      { "task": "Check airflow", "done": true }
+    ],
+    "details": "Supplies combustion air to the furnace or boiler system."
+  },
+  {
+    "name": "Induction Motor",
+    "image": "Induction Motor.jpg",
+    "lastMaintained": "2025-06-18",
+    "nextDue": "2025-08-18",
+    "status": "Healthy",
+    "hazard": 8,
+    "hazardList": ["Minor voltage imbalance"],
+    "graph": "graph_7.png",
+    "checklist": [
+      { "task": "Check phase current", "done": false },
+      { "task": "Clean motor casing", "done": true }
+    ],
+    "details": "Drives mechanical loads with electromagnetic induction."
+  },
+  {
+    "name": "Mechanical Draft Cooling Tower",
+    "image": "Mechanical Draft Cooling Tower.jpg",
+    "lastMaintained": "2025-05-25",
+    "nextDue": "2025-08-05",
+    "status": "Monitor Closely",
+    "hazard": 65,
+    "hazardList": ["Scale buildup", "Fan motor issues"],
+    "graph": "graph_8.png",
+    "checklist": [
+      { "task": "Check water quality", "done": false },
+      { "task": "Inspect gear drive", "done": false }
+    ],
+    "details": "Removes heat from circulating water via air contact."
+  },
+  {
+    "name": "Rotary Screw Air Compressor",
+    "image": "Rotary Screw Air Compressor.jpg",
+    "lastMaintained": "2025-06-10",
+    "nextDue": "2025-08-10",
+    "status": "Healthy",
+    "hazard": 12,
+    "hazardList": ["Oil level slightly low"],
+    "graph": "graph_9.png",
+    "checklist": [
+      { "task": "Drain moisture", "done": true },
+      { "task": "Check belt tension", "done": false }
+    ],
+    "details": "Continuous air supply through screw-type compression."
+  },
+  {
+    "name": "Shell and Tube Heat Exchanger",
+    "image": "Shell and Tube Heat Exchanger.jpg",
+    "lastMaintained": "2025-04-28",
+    "nextDue": "2025-07-28",
+    "status": "Needs Check",
+    "hazard": 55,
+    "hazardList": ["Thermal fouling", "Tube vibration"],
+    "graph": "graph_10.png",
+    "checklist": [
+      { "task": "Clean tube bundle", "done": false },
+      { "task": "Check gasket integrity", "done": true }
+    ],
+    "details": "Transfers heat between two fluids in different phases."
+  },
+  {
+    "name": "Steam Turbine",
+    "image": "Steam Turbine.jpg",
+    "lastMaintained": "2025-05-01",
+    "nextDue": "2025-07-30",
+    "status": "Monitor Closely",
+    "hazard": 68,
+    "hazardList": ["Blade erosion", "Seal leakage"],
+    "graph": "graph_11.png",
+    "checklist": [
+      { "task": "Check shaft alignment", "done": false },
+      { "task": "Monitor steam pressure", "done": false }
+    ],
+    "details": "Converts thermal energy of steam to mechanical power."
+  },
+  {
+    "name": "Water Tube Boiler",
+    "image": "Water Tube Boiler.jpg",
+    "lastMaintained": "2025-06-20",
+    "nextDue": "2025-08-20",
+    "status": "Healthy",
+    "hazard": 9,
+    "hazardList": ["Slight pressure drop"],
+    "graph": "graph_12.png",
+    "checklist": [
+      { "task": "Inspect water level", "done": true },
+      { "task": "Test safety valve", "done": false }
+    ],
+    "details": "Generates steam by heating water inside tubes."
+  }
+]
